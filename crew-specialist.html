@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Tourism - Crew</title>
+  <link rel="stylesheet" href="crew-specialist.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="starter-code/assets/shared/logo.svg" alt="Logo">
+    </div>
+  
+    <!-- PC用ナビゲーション -->
+    <nav class="nav-desktop">
+      <ul>
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="destination-moon.html">01 Destination</a></li>
+        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a href="technology-vehicle.html">03 Technology</a></li>
+      </ul>
+    </nav>
+  
+    <!-- ハンバーガーメニュー（スマホ用） -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <img src="starter-code/assets/shared/icon-hamburger.svg" id="menu-icon" alt="Menu">
+    </div>
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="destination-moon.html">01 Destination</a></li>
+        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a href="technology-vehicle.html">03 Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="crew">
+      <h2><span>02</span> Meet Your Crew</h2>
+
+      <div class="content">
+        <div class="text-content">
+          <h3>Mission Specialist</h3>
+          <h1>Mark Shuttleworth</h1>
+          <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South African 
+            to travel to space as a space tourist.</p>
+
+          <div class="pagination">
+            <a href="crew-commander.html" class="dot"></span>
+            <a href="crew-pilot.html" class="dot"></span>
+            <a href="crew-specialist.html" class="dot active"></span>
+            <a href="crew-engineer.html" class="dot"></span>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="starter-code/assets/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth">
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="crew-navigation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

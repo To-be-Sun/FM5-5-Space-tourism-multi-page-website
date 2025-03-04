@@ -1,0 +1,157 @@
+/* 基本設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('starter-code/assets/home/background-home-desktop.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* ロゴ */
+.logo img {
+  height: 40px;
+}
+
+/* PC用ナビゲーション */
+.nav-desktop {
+  display: flex;
+}
+
+.nav-desktop ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-desktop ul li {
+  margin: 0 20px;
+}
+
+.nav-desktop ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-desktop ul li a.active {
+  border-bottom: 2px solid white;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 20px 0;
+}
+
+.description {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* EXPLORE ボタン */
+.explore-btn {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.explore-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ハンバーガーメニュー（スマホ用） */
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index:10;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom:0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.menu-mobile ul {
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+  margin-top:60px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-mobile ul li {
+  margin: 10px 0;
+}
+
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+
+/* スマホ向け（768px 以下） */
+@media(max-width: 768px) {
+  body {
+      background: url("starter-code/assets/home/background-home-tablet.jpg") no-repeat center center/cover;
+  }
+
+  /* PC用ナビゲーションを隠す */
+  .nav-desktop {
+      display: none;
+  }
+
+  /* メニューアイコン（☰）を表示 */
+  .menu-icon {
+      display: block;
+  }
+
+  /* ハンバーガーメニューの表示 */
+  .menu-mobile.show {
+      display: flex;
+  }
+}
+
+/* スマホ向け（425px 以下） */
+@media(max-width: 425px) {
+  body {
+      background: url("starter-code/assets/home/background-home-mobile.jpg") no-repeat center center/cover;
+  }
+}

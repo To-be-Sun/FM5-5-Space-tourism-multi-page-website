@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Tourism - Europa</title>
+  <link rel="stylesheet" href="destination-europa.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="starter-code/assets/shared/logo.svg" alt="Logo">
+    </div>
+  
+    <!-- PC用ナビゲーション -->
+    <nav class="nav-desktop">
+      <ul>
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="destination-moon.html">01 Destination</a></li>
+        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a href="technology-vehicle.html">03 Technology</a></li>
+      </ul>
+    </nav>
+  
+    <!-- ハンバーガーメニュー（スマホ用） -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <img src="starter-code/assets/shared/icon-hamburger.svg" id="menu-icon" alt="Menu">
+    </div>
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="destination-moon.html">01 Destination</a></li>
+        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a href="technology-vehicle.html">03 Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="destination">
+      <h2><span>01</span> Pick Your Destination</h2>
+
+      <div class="content">
+        <div class="image-container">
+          <img src="starter-code/assets/destination/image-europa.png" alt="Europa">
+        </div>
+
+        <div class="text-content">
+          <ul class="tabs">
+            <li><a href="destination-moon.html">Moon</a></li>
+            <li><a href="destination-mars.html">Mars</a></li>
+            <li><a href="destination-europa.html" class="active">Europa</a></li>
+            <li><a href="destination-titan.html">Titan</a></li>
+          </ul>
+
+          <h1>EUROPA</h1>
+          <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.</p>
+
+          <div class="info">
+            <div>
+              <h3>Avg. Distance</h3>
+              <p>628 MIL. KM</p>
+            </div>
+            <div>
+              <h3>Est. Travel Time</h3>
+              <p>3 Years</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
